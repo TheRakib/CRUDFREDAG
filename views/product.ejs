@@ -8,10 +8,16 @@
 </head>
 <body>
     <div>
-            <% products.forEach(  function (product)  {  %>
-         <li> <%=  product.product_name %></li>
-         <li>  <%= product.price %>    </li>
-              <% }) %>
+            <% for( let i = 0; i<products.length; i++)  {  %>
+          <div> <%= products[i].id  %> 
+        <%=  products[i].product_name %>
+           <%= products[i].price %>   
+
+           <a href="/product/<%=products[i].id %>">Edit</a> 
+           <a href="/product/delete/<%=products[i].id %>">Delete</a>
+        
+              <% } %>
+              </div>
      
    <!-- product.forEach(  (product)=>{product.product_name} ) -->
 

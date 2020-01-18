@@ -1,0 +1,9 @@
+<form action="/product/edit" method="post">
+   <div> <%= product.product_name %>   </div>
+   <input type="text" name="product_name" id="" value="<%= product.product_name %>">
+   <input type="text" name="price" id="" value="<%= product.price %>">
+   <input type="number" name="id" value="<%= product.id %>" 
+   contenteditable="false">
+<button type="submit">Save Changes</button>
+
+</form>
